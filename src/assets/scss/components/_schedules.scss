@@ -1,0 +1,28 @@
+.schedules {
+
+    @media screen and (min-width: $screen-xs-min) {
+        padding: 0 96px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        padding: 0;
+    }
+
+    .options {
+        text-align: center;
+        margin-top: 32px;
+        min-width: 343px;
+    }
+
+    select {
+        margin-left: 16px;
+    }
+
+    .alert {
+        margin-top: 32px;
+
+        @media screen and (min-width: $screen-md-min) {
+            display: none;
+        }
+    }
+}

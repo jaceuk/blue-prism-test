@@ -1,0 +1,17 @@
+.header {
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.16);
+    background-color: $white;
+
+    .logo {
+        background: url(../../images/logo.svg) no-repeat 50% 50%;
+        width: 278px;
+        height: 38px;
+    }
+
+    .logo {
+        display: inline-block;
+    }
+}

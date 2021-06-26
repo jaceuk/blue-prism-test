@@ -1,0 +1,48 @@
+.icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 42px;
+    height: 42px;
+    display: block;
+
+    &.icon-chevron-down {
+        background-image: url(../../images/icon-chevron-down.svg);
+        width: 20px;
+        height: 12px;
+    }
+
+    &.icon-chevron-up {
+        background-image: url(../../images/icon-chevron-up.svg);
+        width: 20px;
+        height: 12px;
+    }
+
+    &.icon-clock {
+        background-image: url(../../images/icon-clock.svg);
+
+        .retired & {
+            background-image: url(../../images/icon-clock-red.svg);
+        }
+    }
+
+    &.icon-file {
+        background-image: url(../../images/icon-file.svg);
+
+        .retired & {
+            background-image: url(../../images/icon-file-red.svg);
+        }
+    }
+
+    &.icon-error {
+        background-image: url(../../images/icon-error.svg);
+    }
+
+    &.icon-chevron-left-white {
+        background-image: url(../../images/icon-chevron-left-white.svg);
+    }
+
+    &.icon-chevron-left {
+        background-image: url(../../images/icon-chevron-left.svg);
+    }
+}

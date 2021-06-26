@@ -1,0 +1,36 @@
+.alert {
+    padding: 16px;
+    border-radius: $border-radius-small;
+    font-weight: 700;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    width: 100%;
+
+    @media (min-width: $screen-sm-min) {
+        padding: 32px;
+    }
+
+    &.error {
+        background-color: $pale-red;
+        color: $red;
+        border-color: $medium-red;
+
+        .text {
+            margin-left: 16px;
+            width: calc(100% - 74px);
+
+            @media (min-width: $screen-sm-min) {
+                margin-left: 32px;
+            }
+        }
+
+        .error-message {
+            color: $dark-red;
+            margin-top: 8px;
+            font-weight: 400;
+        }
+    }
+}

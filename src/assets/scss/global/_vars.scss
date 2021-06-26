@@ -1,0 +1,42 @@
+// fonts
+$heading-font: 'Nunito sans', sans-serif;
+$body-font: 'Nunito Sans', sans-serif;
+
+// colours
+$white: white;
+$black: black;
+$near-black: #333;
+
+$primary-blue: #124E91;
+$secondary-blue: #047BC1;
+
+$red: #B33F2E;
+$pale-red: #FFF8F8;
+$medium-red: #D7B5B3;
+$dark-red: #58251D;
+
+$green: #2A7A58;
+$pale-green: #E4F6F0;
+$medium-green: #9DC1B4;
+$dark-green: #0A5638;
+
+$extra-pale-blue: #fafcff;
+$pale-blue: #F3F5F9;
+$medium-blue: #a8bbe0;
+
+$pale-grey: #E8EAEC;
+
+$body-font-color: $near-black;
+
+// grid
+$screen-xs-min: 576px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1250px;
+
+// animations
+$button-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+// borders
+$border-radius-large: 16px;
+$border-radius-small: 8px;

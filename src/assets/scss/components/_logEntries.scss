@@ -1,0 +1,181 @@
+.log-entries {
+    width: 100%;
+
+    @media screen and (min-width: $screen-md-min) {
+        margin:  0 0 0 16px;
+    }
+
+    .panel {
+        background-color: $white;
+        padding: 16px;
+        margin-top: 32px;
+
+        .title {
+            margin-bottom: 16px;
+        }
+    }
+
+    .footer {
+        text-align: center;
+        padding: 32px 0;
+        background-color: $pale-blue;
+    }
+
+    .back-button {
+        background: $white;
+        color: $near-black;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        border-top: 2px solid $pale-grey;
+
+        @media screen and (min-width: $screen-md-min) {
+            display: none;
+        }
+    }
+
+    .options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        border-top: 2px solid $pale-grey;
+        padding: 16px 0 0 0;
+
+        label {
+            text-align: center;
+            width: 100%;
+            margin: 0 8px;
+
+            @media screen and (min-width: $screen-md-min) {
+                width: auto;
+                margin: 0;
+            }
+
+            select {
+                width: 100%;
+                margin-top: 8px;
+
+                @media screen and (min-width: $screen-sm-min) {
+                    margin-left: 16px;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;;
+
+        tr {
+
+            &:nth-child(2n) {
+
+                td {
+                    background-color: $pale-blue;
+                }
+            }
+
+            &:hover {
+
+                td {
+                    background-color: rgba($primary-blue, 0.2);
+                }
+            }
+
+            td,
+            th {
+                background-color: $white;
+                padding: 16px 8px;
+                vertical-align: top;
+
+            }
+
+            th {
+                background: $white;
+                text-align: left;
+                color: $near-black;
+                border-bottom: 1px solid $near-black;
+            }
+        }
+    }
+
+    @media only screen and (max-width: ($screen-sm-min - 1)) {
+
+        .responsive-table {
+
+            /* Force table to not be like tables anymore */
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+
+                &:nth-child(2n) {
+
+                    td {
+                        background-color: $white;
+                    }
+                }
+            }
+
+            /* Hide table headers (but not display: none;, for accessibility) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #ccc;
+                border-radius: $border-radius-small;
+                margin: 32px 0;
+
+                td:first-child {
+                    border-radius: $border-radius-small $border-radius-small 0 0;
+                }
+
+                td:last-child {
+                    border-radius: 0 0 $border-radius-small $border-radius-small;
+                }
+            }
+
+            td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid $pale-grey;
+                position: relative;
+                padding-left: 40%;
+                white-space: normal;
+                text-align: left;
+            }
+
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 0;
+                left: 0;
+                width: 45%;
+                padding: 16px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            /* Label the data */
+            td:before {
+                content: attr(data-title);
+            }
+        }
+    }
+}

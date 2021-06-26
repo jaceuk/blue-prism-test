@@ -1,0 +1,44 @@
+.title {
+    display: flex;
+    align-items: flex-start;
+
+    &-text {
+        width: calc(100% - 42px);
+        padding-left: 16px;
+    }
+
+    .retired & {
+        color: $red;
+    }
+
+    .schedule-id {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .retired-text {
+            color: $red;
+            font-weight: 600;
+            display: none;
+
+            .retired & {
+                display: block;
+            }
+        }
+    }
+
+    .schedule-name {
+        font-weight: 800;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+}
+
+.hide-on-mobile {
+    display: none;
+
+    @media screen and (min-width: $screen-md-min) {
+        display: block;
+    }
+}

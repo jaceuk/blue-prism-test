@@ -1,0 +1,43 @@
+.button {
+    background: $primary-blue;
+    color: $white;
+    padding: 16px 32px;
+    border-radius: $border-radius-small;
+    border: 2px solid $primary-blue;
+    transition: $button-transition;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    text-align: center;
+
+    &.button-primary {
+        box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.16);
+
+        &:hover,
+        &:focus {
+            background-color: $black;
+            border-color: $black;
+        }
+    }
+
+    &.button-secondary {
+        background: $white;
+        color: $primary-blue;
+        border-color: $pale-grey;
+
+        &:hover,
+        &:focus {
+            border-color: $medium-blue;
+        }
+
+        .schedule & {
+            color: $red;
+
+            &:hover,
+            &:focus {
+                border-color: $medium-red;
+            }
+        }
+    }
+}

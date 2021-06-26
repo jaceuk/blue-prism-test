@@ -1,0 +1,29 @@
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 16px;
+}
+
+main {
+    background: $pale-blue;
+
+    .container {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+
+        @media (min-width: $screen-md-min) {
+            flex-direction: row;
+        }
+    }
+}
+
+.scrollable {
+
+    @media (min-width: $screen-md-min) {
+        height: calc(100vh - 83px);
+        padding-right: 16px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}

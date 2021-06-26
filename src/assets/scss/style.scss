@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap");
+
+// global
+@import "global/vars";
+@import "global/reset";
+@import "global/html";
+@import "global/scaffolding";
+@import "global/icons";
+@import "global/buttons";
+@import "global/shared";
+@import "global/utilities";
+
+// component specific
+@import "components/errorMessage";
+@import "components/header";
+@import "components/logEntries";
+@import "components/scheduleCard";
+@import "components/schedules";
