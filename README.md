@@ -2,8 +2,6 @@
 
 Thank you for giving me the opportunity to take this test.
 
-All feedback greatly appreciated, regardless of the actual outcome of the process.
-
 Preview URL: https://distracted-bose-f02ff5.netlify.app/
 (please make sure you're running the mockserver locally on port 3000)
 
@@ -47,12 +45,16 @@ Thew usual suspects really:
 
 I'd like to highlight a few areas that I covered:
 
-* Uses semantic HTML.
+* Semantic HTML.
 * Fully responsive.
 * Meets WCAG 2.0 (AA) accessibility requirements.
-* Error handling covering API being down and no results found.
+* Error handling covering API being down and/or no results found.
 * Setup testing (unit and snapshot) with JEST.
 * Can filter log entries by status
 * Can sort log entries by a wide variety of options
 * The log entries filter and sort work together so you can sort the filtered log entries and vice versa
 * Can filter schedules by day of the week
+
+I also added a loading animation to the api calls but decided not to deploy the changes as I HAD to stop tinkering! :)
+
+Thank you for you time and I appreciate any feedback, regardless of the actual outcome of the process.
