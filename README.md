@@ -1,26 +1,14 @@
-Issues to resolve:
-
-sort cards by retired
-
 # README #
 
 Thank you for giving me the opportunity to take this test.
 
 All feedback greatly appreciated, regardless of the actual outcome of the process.
 
-### Quick note about proofs of concept ###
-
-The brief describes this project as a proof of concept. In my experience proofs of concept are extremely lightweight and the bare minimum to prove the concept which usually get rebuilt.
-
-In line with the rest of the brief I've proceeded as if this is a more of a foundation to build from.
-
-I just wanted to call this out so you didn't think I hadn't read the brief :)
-
 ### My approach ###
 
 Here's a quick summary of my process.
 
-* Read the brief thoroughly then, when I was done, I went though it again ... several times in fact.
+* Read the brief thoroughly then, when done, I went though it again ... several times in fact.
 * Before doing anything I set up a new repository for my code.
 * First up I setup the mock server as per the instructions (after updating my node version).
 * Setup my project using create-react-app and removed the unneeded boiler plate files.
@@ -48,7 +36,7 @@ Thew usual suspects really:
 * Redux
 * HTML
 * SASS
-* Git (Bitbucket)
+* Git
 * VS Code with a handful of handy extensions
 * Figma
 
@@ -65,11 +53,3 @@ I'd like to highlight a few areas that I covered:
 * Can sort log entries by a wide variety of options
 * The log entries filter and sort work together so you can sort the filtered log entries and vice versa
 * Can filter schedules by day of the week
-
-### Bonus points addressed ###
-
-* Filter the table of log entries
-* Filter the schedule cards
-* CSS usage - done
-* UI testing
-* Hosted on Github pages
