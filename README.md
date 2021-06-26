@@ -4,6 +4,9 @@ Thank you for giving me the opportunity to take this test.
 
 All feedback greatly appreciated, regardless of the actual outcome of the process.
 
+Preview URL: https://distracted-bose-f02ff5.netlify.app/
+(please make sure you're running the mockserver locally on port 3000)
+
 ### My approach ###
 
 Here's a quick summary of my process.
