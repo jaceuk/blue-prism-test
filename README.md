@@ -3,31 +3,28 @@
 Thank you for giving me the opportunity to take this test.
 
 Preview URL: https://distracted-bose-f02ff5.netlify.app/
-(please make sure you're running the mockserver locally on port 3000)
+(please make sure you're running the mock server locally on port 3000)
 
 ### My approach ###
 
-Here's a quick summary of my process.
+Here's a quick summary of my approach:
 
 * Read the brief thoroughly then, when done, I went though it again ... several times in fact.
-* Before doing anything I set up a new repository for my code.
-* First up I setup the mock server as per the instructions (after updating my node version).
-* Setup my project using create-react-app and removed the unneeded boiler plate files.
-* Installed ESLint using AirBnB defaults with a few tweaks.
-* Added Redux. Whilst this is a small project is too useful not to include.
-* Built an MVP free using the simplest of markup to get the functionality and error handling working clear of presentational clutter.
-* Created a design.
-* Implemented the design along with supporting markup.
+* Built a bare bones minimum viable product to get the functionality and error handling working clear of presentational clutter.
+* Created and implemented the design along with supporting markup.
 * Added 'nice to have' features.
 * Setup basic testing (unit/component and snapshot) with JEST and React Testing Library.
+* Thorough manual testing took place throughout along with constantly going back to the brief.
 
-### Rational ###
+The initial minimum viable product was created using:
 
-Used SASS over styled components
-On a project this size with minimal separate components and minimal styles it made more sense. Also it's a personal preference.
+* create-react-app
+* ESLint with AirBnB defaults along with a few tweaks
+* Redux, whilst this is a small project it's just too useful
 
-Kept things simple components wise
-I decided to only break out the components that would need to be updated with a state change. I could have gone more granular but it seemed like overkill for this project.
+I decided to use SASS over styled components. On a project this size with minimal separate components and styles it made more sense. Also it's a personal preference.
+
+Components wise I decided to only break out the components that would need to be updated with a state change. Anything more granular would have been overkill for this project.
 
 ### Technologies/tools used ###
 
@@ -35,20 +32,22 @@ Thew usual suspects really:
 
 * React
 * Redux
+* ESLint
 * HTML
 * SASS
+* Jest/React Testing Library
 * Git
-* VS Code with a handful of handy extensions
+* VS Code with a handful of extensions
 * Figma
 
 ### Highlights ###
 
 I'd like to highlight a few areas that I covered:
 
-* Semantic HTML.
+* Uses semantic HTML.
 * Fully responsive.
 * Meets WCAG 2.0 (AA) accessibility requirements.
-* Error handling covering API being down and/or no results found.
+* Error handling covering API being down and no results found.
 * Setup testing (unit and snapshot) with JEST.
 * Can filter log entries by status
 * Can sort log entries by a wide variety of options
@@ -57,4 +56,4 @@ I'd like to highlight a few areas that I covered:
 
 I also added a loading animation to the api calls but decided not to deploy the changes as I HAD to stop tinkering! :)
 
-Thank you for you time and I appreciate any feedback, regardless of the actual outcome of the process.
+Thank you for you time and I appreciate any feedback.
